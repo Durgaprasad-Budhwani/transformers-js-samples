@@ -10,16 +10,22 @@ const model = 'Xenova/distilbert-base-uncased-finetuned-sst-2-english';
 })();
 
 
-(async () => {
-	const task = 'text-classification';
-	const model = 'distilbert-base-uncased-finetuned-sst-2-english';
-	const { pipeline, env } = await import('@xenova/transformers');
-	env.localModelPath = './models'
-	env.allowRemoteModels = false;
-	const classify = await pipeline(task, model, {});
-	const result = await classify('I love Tech9ers!');
-	console.log(result)
-})();
+// (async () => {
+// 	const task = 'text-classification';
+// 	const model = 'distilbert-base-uncased-finetuned-sst-2-english';
+// 	const { pipeline, env } = await import('@xenova/transformers');
+// 	env.localModelPath = './models'
+// 	env.allowRemoteModels = false;
+// 	const classify = await pipeline(task, model, {});
+// 	const result = await classify('I love Tech9ers!');
+// 	console.log(result)
+// })();
+
+
+
+
+
+
 //
 //
 // // (async () => {
