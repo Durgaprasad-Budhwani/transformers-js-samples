@@ -1,0 +1,9 @@
+{
+  "name": "nodejs_application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@xenova/transformers": "^2.5.1"
+  }
+}
