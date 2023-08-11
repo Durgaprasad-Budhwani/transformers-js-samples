@@ -1,9 +1,7 @@
-
-
 (async () => {
-const task = 'text-classification';
-const model = 'Xenova/distilbert-base-uncased-finetuned-sst-2-english';
-	const { pipeline, env } = await import('@xenova/transformers');
+	const task = 'text-classification';
+	const model = 'Xenova/distilbert-base-uncased-finetuned-sst-2-english';
+	const {pipeline, env} = await import('@xenova/transformers');
 	const classify = await pipeline(task, model, {});
 	const result = await classify('I love Tech9ers!');
 	console.log(result)
@@ -20,10 +18,6 @@ const model = 'Xenova/distilbert-base-uncased-finetuned-sst-2-english';
 // 	const result = await classify('I love Tech9ers!');
 // 	console.log(result)
 // })();
-
-
-
-
 
 
 //
